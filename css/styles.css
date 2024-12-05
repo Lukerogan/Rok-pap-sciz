@@ -13,3 +13,12 @@ body{
     color: white;
     font-size:xx-large;
 }
+
+.wiz{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.fight-row{
+    height: 100vh;
+}
