@@ -7,18 +7,32 @@
 }
 
 body{
-    font-family: "New Rocker", system-ui;
+    font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
     color: white;
     font-size:xx-large;
+    height: 100%;
 }
 
 .wiz{
     -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  
 }
 
 .fight-row{
-    height: 100vh;
+    height: 45vh;
+}
+
+.names{
+    height: 45vh;
+}
+
+.charecter{
+    align-content: end;
+}
+
+.attack{
+    align-content: center;
 }
