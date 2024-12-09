@@ -50,7 +50,6 @@ body{
 }
 
 
-
 /* Parent container to align items side by side */
 .button-container {
     display: flex;
@@ -63,7 +62,7 @@ body{
   .brutalist-button {
     display: flex;
     align-items: center; /* Vertically aligns button and text */
-    justify-content: center
+    justify-content: center;
     cursor: pointer;
     width: 169px;
     height: 60px;
