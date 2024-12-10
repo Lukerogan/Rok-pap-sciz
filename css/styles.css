@@ -64,7 +64,7 @@ body{
     align-items: center; /* Vertically aligns button and text */
     justify-content: center;
     cursor: pointer;
-    width: 169px;
+    width: 125px;
     height: 60px;
     background-color: #000;
     color: #fff;
@@ -79,6 +79,25 @@ body{
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+  }
+
+  .rock-button{
+    background-image: url(../img/magic-rock.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .paper-button{
+    background-image: url(../img/magic-paper.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scissors-button{
+    background-image: url(../img/kill-la-kill-scissors.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .custom-logo {
