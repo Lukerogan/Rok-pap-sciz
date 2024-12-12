@@ -86,7 +86,7 @@ if(count == 1){
 else if(count == 2){
     document.getElementById('enemy').src = "img/ngakau-blake-knight-removebg-preview.png"
     document.getElementById('background').style.backgroundImage = 'url(../img/magical-indoor-battle-background.png)'
-    document.getElementById('enemy').style.transform = 'scaleX(0)'
+    document.getElementById('enemy').style.transform = 'scaleX(+1)'
 }
 else if(count == 3){
     document.getElementById('enemy').src = 'img/output-onlinegiftools (1).gif'
