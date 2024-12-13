@@ -71,6 +71,7 @@ function getScore(){
 
 if (result == 'you win'){
     count += 1
+    document.getElementById('next').style.display = "flex";
 } 
 else if (result == 'you lose'){
     count = 1
