@@ -2,6 +2,7 @@ const computerChoiceDisplay = document.getElementById('enemy-attack')
 const userChoiceDisplay = document.getElementById('player-attack')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button:not(.cta)')
+const next = document.getElementById('next')
 let userChoice
 let computerChoice
 let result
@@ -66,18 +67,29 @@ function getResult() {
     resultDisplay.innerHTML = result
     getScore();
 }
-
+next.addEventListener('click', function(){
+    count += 1
+    getScore();
+    document.getElementById('next').style.display = "none";
+    resultDisplay.innerHTML = '';
+    document.getElementById("w-attack").src = "img/Empty.png";
+    document.getElementById("p-attack").src = "img/Empty.png";
+});
 function getScore(){
 
+
+
+
 if (result == 'you win'){
-    count += 1
+    
     document.getElementById('next').style.display = "flex";
 } 
 else if (result == 'you lose'){
     count = 1
+    document.getElementById('next').style.display = "none";
 }
 else{
-    count = count
+    document.getElementById('next').style.display = "none";
 }
 
 if(count == 1){
@@ -93,4 +105,11 @@ else if(count == 3){
     document.getElementById('enemy').src = 'img/output-onlinegiftools (1).gif'
     document.getElementById('background').style.backgroundImage = 'url(../img/final-boss-magical-battle-background.png)'
 }
+else if(count == 4){
+    window.location.href='winpage.html';
 }
+console.log(`count is ${count}`);
+}
+
+
+

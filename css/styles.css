@@ -3,7 +3,11 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 98.4vh;
+}
+
+.gray{
+  background-color: gray;
 }
 
 body{
@@ -21,11 +25,10 @@ display: none;
 .wiz{
     -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  
 }
 
 .fight-row{
-    height: 45vh;
+    height: 47vh;
 }
 
 .names{
@@ -50,6 +53,11 @@ display: none;
     justify-content: flex-end;
     display: flex;
 
+}
+
+.enemy{
+   height: 350px;
+   display: flex;
 }
 
 
@@ -117,6 +125,13 @@ display: none;
     max-width: 300px; /* Optional, to limit text width */
   }
   
+.next-btn{
+  height: 50px;
+}
+
+#result{
+  height: 48px;
+}
 
   /* From Uiverse.io by mobinkakei */ 
 .cta {
@@ -199,4 +214,21 @@ display: none;
   100% {
     fill: white;
   }
+}
+
+
+
+html, body, .win-text {
+  height: 100%;
+}
+.win-text {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
 }
